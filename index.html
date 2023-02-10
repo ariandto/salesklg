@@ -20,7 +20,7 @@
     <h3 class="text-center text-primary">
       Khusus Karyawan KLG
     </h3>
-    <!-- Table Data -->
+    <!-- table Data -->
     <div class="card container-fluid col d-flex justify-content-center">
       <hr class="card bg-info" />
       <input
@@ -31,12 +31,12 @@
         placeholder="Ketik nama sales disini, lalu klik chat"
       />
 
-      <div class="card table-responsive container-fluid">
-        <table class="mx-auto w-auto w-">
+      <div class="card table-responsive container-fluid h2">
+        <table class="mx-auto w-auto">
         </div>
         <table
-          class="cardtable table-hover container-fluid"
-          id="myTable"
+          class="cardtable table-hover container-fluid table-striped table-striped table-light"
+          id="mytable"
           data-filter-control="true"
           data-show-search-clear-button="true"
         >
@@ -45,12 +45,20 @@
             <th class="bg-warning text-center">WhatsApp</th>
           </tr>
           <tr>
-            <td class="col-1">Dina</td>
-            <td class="col-1"><a href="https://wa.me/62895340710827">Chat WA</a></td>
+            <td class="col-1 h6 text-info">Dina</td>
+            <td class="col-1 h6"><a href="https://wa.me/62895340710827">Chat WA</a></td>
           </tr>
           <tr>
-            <td class="col-1">Ahmad S89/S300</td>
-            <td class="col-1"><a href="https://wa.me/62895340710827">Chat WA</a></td>
+            <td class="col-1 h6 text-info">Akhmad Sobari k07/k308</td>
+            <td class="col-1 h6"><a href="https://wa.me/62895340710827">Chat WA</a></td>
+          </tr>
+          <tr>
+            <td class="col-1 h6 text-info">Dina</td>
+            <td class="col-1 h6"><a href="https://wa.me/62895340710827">Chat WA</a></td>
+          </tr>
+          <tr>
+            <td class="col-1 h6 text-info">Akhmad Sobari k07/k308</td>
+            <td class="col-1 h6"><a href="https://wa.me/62895340710827">Chat WA</a></td>
           </tr>
         </table>
     </div>
@@ -62,7 +70,7 @@
         //Intialising Variables
         input = document.getElementById('myInput');
         filter = input.value.toUpperCase();
-        table = document.getElementById('myTable');
+        table = document.getElementById('mytable');
         tr = table.getElementsByTagName('tr');
 
         for (let i = 0; i < tr.length; i++) {
