@@ -29,45 +29,22 @@
       />
 
       <table
-        class="table table-hover table-dark"
+        class="table table-hover"
         id="myTable"
         data-filter-control="true"
         data-show-search-clear-button="true"
       >
         <tr>
-          <th>Company</th>
-          <th>Contact</th>
-          <th>Country</th>
+          <th class="bg-primary text-white">Sales</th>
+          <th class="bg-warning">WhatsApp</th>
         </tr>
         <tr>
-          <td>Kebumen</td>
-          <td>Budi Ariyanto</td>
-          <td><a href="https://wa.me/62895340710827">Click</a></td>
+          <td>Budi A</td>
+          <td><a href="https://wa.me/62895340710827">Chat WA</a></td>
         </tr>
         <tr>
-          <td>Centro comercial Moctezuma</td>
           <td>Francisco Chang</td>
-          <td>Mexico</td>
-        </tr>
-        <tr>
-          <td>Ernst Handel</td>
-          <td>Roland Mendel</td>
-          <td>Austria</td>
-        </tr>
-        <tr>
-          <td>Island Trading</td>
-          <td>Helen Bennett</td>
-          <td>UK</td>
-        </tr>
-        <tr>
-          <td>Laughing Bacchus Winecellars</td>
-          <td>Yoshi Tannamuri</td>
-          <td>Canada</td>
-        </tr>
-        <tr>
-          <td>Magazzini Alimentari Riuniti</td>
-          <td>Giovanni Rovelli</td>
-          <td>Italy</td>
+          <td><a href="https://wa.me/62895340710827">Chat WA</a></td>
         </tr>
       </table>
     </div>
@@ -83,7 +60,7 @@
         tr = table.getElementsByTagName('tr');
 
         for (let i = 0; i < tr.length; i++) {
-          td = tr[i].getElementsByTagName('td')[1];
+          td = tr[i].getElementsByTagName('td')[0];
           if (td) {
             txtValue = td.textContent || td.innerText;
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
